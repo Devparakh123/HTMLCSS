@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+.dd{
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.heading{
+    color: aqua;
+    background-color: black;
+}
+.container{
+    color: aqua;
+    background-color: blue;
+    height: 5vh;
+    width: 55vw;
+  
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; these works rows or main axis */ 
+      /* align-items: start; */
+    /* these works for the columns  */
+    /* gap: 30px; */
+    border: 2px solid black;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* transform: scale(1);
+    transition: transfrom 0.9 ease; */
+    /* transform: translate(0,0);
+    transition: transform 1.5 sec ; */
+    transform: skew(0deg);
+    transition: transform 0.9 ease;
+}
+.container:hover{
+    transform: skew(360deg) ;
+    /* transform: scale(1.5); */
+    /* transform: translate(300px,300px); */
+}
+.box{
+    border: 3px solid black;
+   width: 100px;
+   height: 80px;
+   /* height: 20vh; */
+   flex-basis: 25%;
+}
+#box1{
+    order: 1;
+    /* flex-grow: 4; */
+    /* flex-shrink: 10; */
+ flex: 0 1 200px;
+}
+#box2{
+    order: 3;
+    /* flex-shrink: ; */
+    /* flex-grow: 10; */
+}
+#click:active{
+    background-color: aqua;
+}
+ul li:first-child{
+    background-color: aqua;
+}
+ul li:nth-child(2n+1){
+    background-color: gray;
+}
+::selection{
+    background-color: black;
+    color: blue;
+}
+.item1::first-line{
+    background-color: rgb(12, 31, 48);
+    color: brown;
+}
+#billu::first-line{
+    background-color: pink;
+    color: red;
+}
+/* #billu:hover::after{
+    content: "hello techno ";
+    background-color: rgb(100, 60, 0);
+    padding: 2px;
+} */
+#billu:hover::before{
+    content: "hello techno ";
+    background-color: rgb(100, 60, 0);
+    padding: 2px;
+}
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}

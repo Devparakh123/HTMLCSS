@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  /* grid-template-rows: repeat(auto-fill,50px); */
+  gap: 10px;
+  justify-content: center;
+  /* align-items: center; */
+   
+  
+}
+.box{
+    background-color: aqua;
+    border: 1px solid black;
+}
+ 
+/* #box1{
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  /* grid-column: 1 /spam 3;} */
+#google{
+  color: aqua;
+  
+}
+#google:hover{
+  color: black;
+   background-color: beige;
+   font-size: 300px;
+   
+}
