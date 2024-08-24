@@ -1,7 +1,7 @@
-// console.log(document.body);
-// console.dir(document.body);
-// document.body.style.background = "blue";
-// console.dir(document.body.childNodes[2].innerText= "abcd");       
+console.log(document.body);
+console.dir(document.body);
+document.body.style.background = "blue";
+console.dir(document.body.childNodes[2].innerText= "abcd");       
 let heading = document.getElementById("heading");
 console.dir(heading);
 let heading2 = document.getElementsByClassName("heading2");
@@ -20,3 +20,11 @@ console.log(heading.tagName);
 let allelements4 = document.querySelector("div").children;
 console.dir(allelements4);
 div = document.querySelector("div");
+console.dir(document);
+  let mydiv = document.getElementById("box");
+ console.log(mydiv);
+ mydiv.style.width = "200px"
+ mydiv.style.height = "500px";
+ mydiv.style.borderRadius ="20px";
+ console.log(mydiv.getAttribute("class"));
+ console.log(mydiv.className);
